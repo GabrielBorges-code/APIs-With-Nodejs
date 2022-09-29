@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "37d78c85-0b48-4131-b5df-b7bedff4d89e",
+		"name": "Node_and_MySQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11739350"
+	},
+	"item": [
+		{
+			"name": "Busca Carros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/carros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"carros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca um Carro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/carro/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"carro",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluí Carro",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/carro/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"carro",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insere Carro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"modelo\": \"Outro\",\r\n    \"placa\": \"asf9874\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/carro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"carro"
+					],
+					"query": [
+						{
+							"key": "modelo",
+							"value": "Honda Fit",
+							"disabled": true
+						},
+						{
+							"key": "placa",
+							"value": "GJG3535",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualiza Carro",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"modelo\": \"Hynudai HB20\",\r\n    \"placa\": \"OPA5468\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/carro/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"carro",
+						"5"
+					],
+					"query": [
+						{
+							"key": "modelo",
+							"value": "Honda Fit",
+							"disabled": true
+						},
+						{
+							"key": "placa",
+							"value": "GJG3535",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
