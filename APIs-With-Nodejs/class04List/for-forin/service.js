@@ -1,12 +1,12 @@
-const { axios } = require("axios");
-const URL = `https://swapi.co/api/people`;
+const URL = `https://swapi.dev/api/people`;
 
 async function getPeoples(name) {
   const url = `${URL}/?search=${name}&format=json`;
-  const response = await axios.getAdapter(url);
-  return response.data;
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
 }
 
-getPeoples("r2")
-  .then((result) => console.log(result))
-  .catch((err) => console.error("Error: ", err));
+module.exports = {
+  getPeoples
+}
